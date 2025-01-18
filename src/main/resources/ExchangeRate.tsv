@@ -1,0 +1,66 @@
+EUR	Euro	€	USD	Dolar	$	1.06	2024-11-27
+USD	Dolar	$	EUR	Euro	€	0.85	2024-11-27
+GBP	Libras Esterlina	£	USD	Dolar	$	1.25	2024-11-27
+USD	Dolar	$	GBP	Libras Esterlina	£	0.80	2024-11-27
+EUR	Euro	€	GBP	Libras Esterlina	£	0.75	2024-11-27
+GBP	Libras Esterlina	£	EUR	Euro	€	1.33	2024-11-27
+JPY	Yen Japonés	¥	USD	Dolar	$	0.007	2024-11-27
+USD	Dolar	$	JPY	Yen Japonés	¥	142.85	2024-11-27
+CAD	Dólar Canadiense	$	USD	Dolar	$	0.75	2024-11-27
+USD	Dolar	$	CAD	Dólar Canadiense	$	1.33	2024-11-27
+AUD	Dólar Australiano	$	USD	Dolar	$	0.65	2024-11-27
+USD	Dolar	$	AUD	Dólar Australiano	$	1.54	2024-11-27
+INR	Rupia India	₹	USD	Dolar	$	0.012	2024-11-27
+USD	Dolar	$	INR	Rupia India	₹	83.33	2024-11-27
+CHF	Franco Suizo	Fr	USD	Dolar	$	1.10	2024-11-27
+USD	Dolar	$	CHF	Franco Suizo	Fr	0.91	2024-11-27
+CNY	Yuan Renminbi	¥	USD	Dolar	$	0.14	2024-11-27
+USD	Dolar	$	CNY	Yuan Renminbi	¥	7.14	2024-11-27
+EUR	Euro	€	JPY	Yen Japonés	¥	0.0066	2024-11-27
+JPY	Yen Japonés	¥	EUR	Euro	€	151.57	2024-11-27
+GBP	Libras Esterlina	£	JPY	Yen Japonés	¥	178.57	2024-11-27
+JPY	Yen Japonés	¥	GBP	Libras Esterlina	£	0.0056	2024-11-27
+CAD	Dólar Canadiense	$	JPY	Yen Japonés	¥	9.33	2024-11-27
+JPY	Yen Japonés	¥	CAD	Dólar Canadiense	$	0.107	2024-11-27
+AUD	Dólar Australiano	$	JPY	Yen Japonés	¥	15.38	2024-11-27
+JPY	Yen Japonés	¥	AUD	Dólar Australiano	$	0.065	2024-11-27
+INR	Rupia India	₹	JPY	Yen Japonés	¥	58.33	2024-11-27
+JPY	Yen Japonés	¥	INR	Rupia India	₹	0.017	2024-11-27
+CHF	Franco Suizo	Fr	JPY	Yen Japonés	¥	142.85	2024-11-27
+JPY	Yen Japonés	¥	CHF	Franco Suizo	Fr	0.007	2024-11-27
+CNY	Yuan Renminbi	¥	JPY	Yen Japonés	¥	0.014	2024-11-27
+JPY	Yen Japonés	¥	CNY	Yuan Renminbi	¥	70.71	2024-11-27
+CAD	Dólar Canadiense	$	GBP	Libras Esterlina	£	0.63	2024-11-27
+GBP	Libras Esterlina	£	CAD	Dólar Canadiense	$	1.58	2024-11-27
+AUD	Dólar Australiano	$	GBP	Libras Esterlina	£	0.52	2024-11-27
+GBP	Libras Esterlina	£	AUD	Dólar Australiano	$	1.92	2024-11-27
+INR	Rupia India	₹	GBP	Libras Esterlina	£	0.64	2024-11-27
+GBP	Libras Esterlina	£	INR	Rupia India	₹	1.56	2024-11-27
+CHF	Franco Suizo	Fr	GBP	Libras Esterlina	£	0.88	2024-11-27
+GBP	Libras Esterlina	£	CHF	Franco Suizo	Fr	1.14	2024-11-27
+CNY	Yuan Renminbi	¥	GBP	Libras Esterlina	£	0.11	2024-11-27
+GBP	Libras Esterlina	£	CNY	Yuan Renminbi	¥	9.09	2024-11-27
+AUD	Dólar Australiano	$	CNY	Yuan Renminbi	¥	4.15	2024-11-27
+CNY	Yuan Renminbi	¥	AUD	Dólar Australiano	$	0.24	2024-11-27
+INR	Rupia India	₹	CNY	Yuan Renminbi	¥	0.85	2024-11-27
+CNY	Yuan Renminbi	¥	INR	Rupia India	₹	1.18	2024-11-27
+CHF	Franco Suizo	Fr	CNY	Yuan Renminbi	¥	7.14	2024-11-27
+CNY	Yuan Renminbi	¥	CHF	Franco Suizo	Fr	0.14	2024-11-27
+CAD	Dólar Canadiense	$	INR	Rupia India	₹	14.29	2024-11-27
+INR	Rupia India	₹	CAD	Dólar Canadiense	$	0.07	2024-11-27
+AUD	Dólar Australiano	$	INR	Rupia India	₹	54.17	2024-11-27
+INR	Rupia India	₹	AUD	Dólar Australiano	$	0.02	2024-11-27
+CHF	Franco Suizo	Fr	INR	Rupia India	₹	91.67	2024-11-27
+INR	Rupia India	₹	CHF	Franco Suizo	Fr	0.011	2024-11-27
+CNY	Yuan Renminbi	¥	INR	Rupia India	₹	12.50	2024-11-27
+INR	Rupia India	₹	CNY	Yuan Renminbi	¥	0.08	2024-11-27
+CHF	Franco Suizo	Fr	AUD	Dólar Australiano	$	1.33	2024-11-27
+AUD	Dólar Australiano	$	CHF	Franco Suizo	Fr	0.75	2024-11-27
+CAD	Dólar Canadiense	$	CHF	Franco Suizo	Fr	0.68	2024-11-27
+CHF	Franco Suizo	Fr	CAD	Dólar Canadiense	$	1.47	2024-11-27
+CNY	Yuan Renminbi	¥	CHF	Franco Suizo	Fr	0.14	2024-11-27
+CHF	Franco Suizo	Fr	CNY	Yuan Renminbi	¥	7.14	2024-11-27
+CNY	Yuan Renminbi	¥	AUD	Dólar Australiano	$	4.63	2024-11-27
+AUD	Dólar Australiano	$	CNY	Yuan Renminbi	¥	0.22	2024-11-27
+CAD	Dólar Canadiense	$	AUD	Dólar Australiano	$	0.50	2024-11-27
+AUD	Dólar Australiano	$	CAD	Dólar Canadiense	$	2.00	2024-11-27
