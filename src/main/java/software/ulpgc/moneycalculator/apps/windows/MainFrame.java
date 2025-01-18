@@ -4,6 +4,7 @@ import software.ulpgc.moneycalculator.apps.windows.view.SwingCurrencyDialog;
 import software.ulpgc.moneycalculator.apps.windows.view.SwingMoneyDialog;
 import software.ulpgc.moneycalculator.apps.windows.view.SwingMoneyDisplay;
 import software.ulpgc.moneycalculator.architecture.control.Command;
+import software.ulpgc.moneycalculator.architecture.control.ExchangeCommand;
 import software.ulpgc.moneycalculator.architecture.model.Currency;
 import software.ulpgc.moneycalculator.architecture.view.CurrencyDialog;
 import software.ulpgc.moneycalculator.architecture.view.MoneyDialog;
@@ -22,6 +23,7 @@ public class MainFrame extends JFrame {
     private final SwingMoneyDialog moneyDialog;
     private final SwingCurrencyDialog currencyDialog;
     private final SwingMoneyDisplay moneyDisplay;
+    private final JLabel exchangeRateLabel;
     private final Map<String, Command> commands;
 
     public MainFrame(List<Currency> currencies) {
@@ -35,6 +37,7 @@ public class MainFrame extends JFrame {
         this.add(currencyDialog = createCurrencyDialog());
         this.add(moneyDisplay = createMoneyDisplay());
         this.add(createCalculateButton());
+        this.add(exchangeRateLabel = createExchangeRateLabel());
         this.commands = new HashMap<>();
     }
 
@@ -50,12 +53,30 @@ public class MainFrame extends JFrame {
         return new SwingMoneyDisplay();
     }
 
+    private JLabel createExchangeRateLabel() {
+        JLabel label = new JLabel("Exchange Rate: ");
+        label.setFont(new Font("Arial", Font.PLAIN, 16));
+        return label;
+    }
+
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                commands.get("exchange").execute();
+                Command command = commands.get("exchange");
+                if (command != null) {
+                    command.execute();
+
+                    if (command instanceof ExchangeCommand) {
+                        ExchangeCommand exchangeCommand = (ExchangeCommand) command;
+                        double rate = exchangeCommand.getChoosenRate();
+                        boolean isFavorable = exchangeCommand.isFavorableExchange();
+
+                        exchangeRateLabel.setText(String.format("Exchange Rate: %.4f", rate));
+                        exchangeRateLabel.setForeground(isFavorable ? Color.GREEN : Color.RED);
+                    }
+                }
             }
         });
         return button;

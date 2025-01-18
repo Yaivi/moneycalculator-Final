@@ -14,12 +14,16 @@ public class ExchangeCommand implements Command {
     private final CurrencyDialog currencyDialog;
     private final List<ExchangeRate> exchangeRates;
     private final MoneyDisplay moneyDisplay;
+    private double choosenRate;
+    private boolean favorableExchange;
 
     public ExchangeCommand(MoneyDialog moneyDialog, CurrencyDialog currencyDialog, MoneyDisplay moneyDisplay, List<ExchangeRate> exchangeRates) {
         this.moneyDialog = moneyDialog;
         this.currencyDialog = currencyDialog;
         this.moneyDisplay = moneyDisplay;
-        this.exchangeRates= exchangeRates;
+        this.exchangeRates = exchangeRates;
+        this.favorableExchange = false;
+        this.choosenRate = 1;
     }
 
     @Override
@@ -27,7 +31,7 @@ public class ExchangeCommand implements Command {
         Money money = moneyDialog.get();
         Currency currency = currencyDialog.get();
 
-        double rate = getRate(money.currency(),currency);
+        double rate = getRate(money.currency(), currency);
         Money result = new Money(money.amount() * rate, currency);
 
         moneyDisplay.show(result);
@@ -36,10 +40,21 @@ public class ExchangeCommand implements Command {
     private double getRate(Currency fromCurrency, Currency toCurrency) {
         for (ExchangeRate exchangeRate : exchangeRates) {
             if (exchangeRate.from().equals(fromCurrency) && exchangeRate.to().equals(toCurrency)) {
-                return exchangeRate.rate();
+                this.choosenRate= exchangeRate.rate();
+                this.favorableExchange = isFavorableRate(this.choosenRate);
+                return this.choosenRate;
             }
         }
         throw new IllegalArgumentException("Tasa de cambio no encontrada para las monedas proporcionadas.");
     }
 
+    private boolean isFavorableRate(double rate) {
+        return rate > 1.0;
+    }
+    public boolean isFavorableExchange(){
+        return favorableExchange;
+    }
+    public double getChoosenRate() {
+        return choosenRate;
+    }
 }
